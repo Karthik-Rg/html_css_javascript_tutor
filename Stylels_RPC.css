@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Fruktur');
+@import url('https://fonts.googleapis.com/css?family=Ewert');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+header{
+	background: white;
+	padding: 25px;
+}
+
+header h1{
+	color:#330000;
+	text-align:center;
+	font-family: 'Fruktur', cursive;
+}
+
+body{
+	background-color:#1a0000;
+}
+
+
+.score{
+	margin: 20px auto;
+	border:2.5px solid white;
+	width:200px;
+	color:white;
+	font-size:36px;
+	text-align:center;
+	padding: 20px;
+	position:relative;
+}
+
+.post{
+	background:#ff3333;
+	font-size:14px;
+	padding: 2px 10px;
+}
+
+#user{
+	position: absolute;
+	top:32px;
+	left:-20px;
+}
+
+#computer{
+	position: absolute;
+	top:32px;
+	left:170px;
+}
+
+#action{
+	text-align:center;
+	color:white;
+	font-family:'Ewert', cursive;
+	padding-top:20px;
+}
+.choices{
+	text-align:center;
+	margin:50px auto;
+}
+
+.choice{
+	display:inline-block;
+	#border:4px solid white;
+	#border-radius:20%;
+	margin: 0px 15px;
+	 border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  #outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.choice:hover{
+	cursor:pointer;
+	#border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+	  
+}
+
+
+.result{
+	font-size: 40px;
+	color: white;
+}
+
+.result p{
+	text-align: center;
+	font-family: 'Fruktur', cursive;
+	font-weight:bold;
+}
+
+
+
+#r{
+}
+
+#p{
+}
+
+#c{
+}
