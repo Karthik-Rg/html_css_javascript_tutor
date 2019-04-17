@@ -22,7 +22,6 @@ body{
 	background-color:#1a0000;
 }
 
-
 .score{
 	margin: 20px auto;
 	border:2.5px solid white;
@@ -108,4 +107,15 @@ body{
 }
 
 #c{
+}
+
+
+.green{
+	border: 4px solid #00FF00;
+	box-shadow: 0 0 10px #00FF00;
+}
+
+.red{
+	border: 4px solid #FF0000;
+	box-shadow: 0 0 10px #FF0000;
 }
