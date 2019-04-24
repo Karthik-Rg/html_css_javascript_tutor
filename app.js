@@ -21,7 +21,17 @@ function Win(choice, compChoice){
 	result_div.innerHTML=`${convertLetter(choice)} beats ${convertLetter(compChoice)} You Win!`;
 	document.getElementById(choice).classList.add('green');
 	setTimeout(()=>document.getElementById(choice).classList.remove('green'),1000);
+	if(user>=10){	
+		Reset(user);
+	}
 }
+
+function Reset(score){
+	if(confirm("Game Over!!")){
+		window.location.reload(true);
+	};
+}
+
 
 function Draw(){
 	result_div.innerHTML="Its a Draw Baby!"
@@ -33,6 +43,9 @@ function Lose(choice, compChoice){
 	result_div.innerHTML=`${convertLetter(compChoice)} beats ${convertLetter(choice)}, You Lose!`;
 	document.getElementById(choice).classList.add('red');
 	setTimeout(()=>document.getElementById(choice).classList.remove('red'),1000);
+	if(comp>=10){	
+		Reset(comp);
+	}
 }
 
 function convertLetter(letter){
